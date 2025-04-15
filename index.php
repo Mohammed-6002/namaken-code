@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class= nav>
             <a href="index.php">Home</a>
         </nav>
     </header>
@@ -24,17 +24,25 @@
         <?php foreach ($students as $student): ?>
         <div class="card">
             <div class="card-header">
-                <h3><?php echo $student['klas']; ?></h3>
+                <h3><?= $student['klas']; ?></h3>
             </div>
             <div class="card-main">
-                <p><?php echo $student['name']; ?></p>
+                <p><?= $student['name']; ?></p>
             </div>
             <div class="card-footer">
-                <p><?php echo $student['degree']; ?></p>
+                <p><?= $student['degree']; ?></p>
             </div>  
         </div>
         <?php endforeach; ?>
     </div>
-</main>
+    </main>
+    <aside>
+        <ol>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+        </ol>
+    </aside>
+    <footer>&copy 2025</footer>
 </body>
 </html>

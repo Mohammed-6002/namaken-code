@@ -1,0 +1,45 @@
+body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 100px minmax(400px, auto) 100px;
+    grid-template-areas: 
+    "hd hd"
+    "mn as"
+    "ft ft";
+    height: 100vh;
+}
+
+header {
+    grid-area: hd;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    grid-area: mn;
+    background-color: rgb(57, 197, 197);
+}
+
+aside {
+    grid-area: as;
+    background-color: rgb(129, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    grid-area: ft;
+    background-color: rgb(17, 105, 105);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap; 
+    background-color: blue;
+}
